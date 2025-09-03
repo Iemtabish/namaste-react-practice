@@ -5,9 +5,9 @@
 }
 
 .body {
-    align-items: center;          /* Horizontal center */
+    align-items: center;          
     padding: 20px;
-    width: 100%;                  /* Full width le */
+    width: 100%;                  
 }
 
 .logo {
@@ -30,7 +30,7 @@
 .res-card {
     padding: 5px;
     width: 190px;
-    height: 380px;
+    height: 390px;
     margin: 7px;
     background-color: #f0f0f0;
     transition: all 0.3s ease;
@@ -55,3 +55,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.res-logo {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.filter-btn {
+    cursor: pointer;
+}
+
