@@ -1,5 +1,6 @@
 import RestroCard from "./RestroCard"; 
-import React from "react";
+import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 
 const restList = {
