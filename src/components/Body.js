@@ -358,7 +358,12 @@ const restList = {
 const Body = () => {
     return (
         <div className="body"> 
-            <div className="filter"> <button className="filter-btn" onClick={() => {restList.restaurants.filter((resto) => restList.restaurants.avgRating > 4.5); 
+            <div className="filter flex ">
+                <div className="search" >
+                    <input type="text" className="border border-solid"></input>
+                    <button className="px-5 border bg-orange-100 rounded-lg">Search</button>
+                </div>
+                 <button className="px-5 border bg bg-gray-100 rounded-lg  " onClick={() => {restList.restaurants.filter((resto) => restList.restaurants.avgRating > 4.5); 
             
             console.log(restList.restaurants); 
             }} 
@@ -367,7 +372,7 @@ const Body = () => {
             
             </div>
             
-            <div className="res-container">
+            <div className="flex flex-wrap">
                  { restList.restaurants.map((restaurants) => <RestroCard key={restaurants.id} resData={restaurants} />
                   ) 
 }              

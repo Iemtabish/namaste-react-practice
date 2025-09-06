@@ -6,17 +6,17 @@ const [btnName, setbtnName] = useState("Login")
 
 
     return (
-        <div className="header">
+        <div className="flex justify-between bg-orange-100 shadow-lg m-2" >
             <div className="logo-container">
-                <img className="logo" src="https://t3.ftcdn.net/jpg/02/41/30/72/360_F_241307210_MjjaJC3SJy2zJZ6B7bKGMRsKQbdwRSze.jpg" />
+                <img className="w-40" src="https://static.vecteezy.com/system/resources/previews/050/816/833/non_2x/swiggy-transparent-icon-free-png.png" />
                 </div>
-                <div className="nav-items">
-                    <ul>
-                        <li>Home</li>
-                        <li>Cart</li>
-                        <li>About</li>
-                        <li>Contact US</li>
-                        <button className="login" onClick={() => {setbtnName("logout");}} 
+                <div className="flex items-center padding">
+                    <ul className="flex p-8 m-12 px-20">
+                        <li className="px-4 font-bold" >Home</li>
+                        <li className="px-4 font-bold" >Cart</li>
+                        <li className="px-4 font-bold">About</li>
+                        <li className="px-4 font-bold">Contact US</li>
+                        <button className="login font-bold" onClick={() => {setbtnName("logout");}} 
                             >{btnName}
                         </button>
                     </ul>
